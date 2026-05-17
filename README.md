@@ -21,7 +21,7 @@ The big difference: types are real. `addArgument(i32, …)` means you get an `i3
 ## Add it to your project
 
 ```bash
-zig fetch --save <url-to-this-repository>
+zig fetch --save git+https://github.com/Scharxi/argparse#v0.1.0
 ```
 
 Then in `build.zig`:

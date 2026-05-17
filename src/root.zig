@@ -58,13 +58,11 @@
 //!
 //! ## Public API
 //!
-//! The symbols below are the supported entry points. Other modules imported here
-//! (`arg_type`, `any_argument`, etc.) are implementation details.
-pub const arg_type = @import("arg_type.zig");
-pub const argument = @import("argument.zig");
-pub const any_argument = @import("any_argument.zig");
-pub const values = @import("values.zig");
-pub const parser = @import("parser.zig");
+//! Re-exported types and functions below are the supported entry points.
+const arg_type = @import("arg_type.zig");
+const argument = @import("argument.zig");
+const values = @import("values.zig");
+const parser = @import("parser.zig");
 
 /// Compile-time argument specification; see `ArgumentParser.addArgument`.
 pub const Argument = argument.Argument;
